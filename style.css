@@ -1,0 +1,161 @@
+/* RESET + FONTE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body {
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* HEADER */
+.header {
+  background-color: #ffffff;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.header h1 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #4b57a3;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  gap: 12px;
+}
+
+/* BOTÕES SOCIAIS */
+.btn-social {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 25px;
+  transition: 0.3s;
+  border: 1px solid;
+}
+
+/* INSTAGRAM */
+.instagram {
+  color: #4b57a3;
+  border-color: #4b57a3;
+}
+
+.instagram:hover {
+  background-color: #4b57a3;
+  color: white;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  color: #25D366;
+  border-color: #25D366;
+}
+
+.whatsapp:hover {
+  background-color: #25D366;
+  color: white;
+}
+
+/* PRODUTOS */
+.produtos {
+  padding: 70px 50px;
+  text-align: center;
+}
+
+.produtos h2 {
+  margin-bottom: 45px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #4b57a3;
+}
+
+/* GRID */
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.produto {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+}
+
+.produto:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* IMAGEM */
+.produto img {
+  width: 100%;
+  aspect-ratio: 3 / 4;     /* proporção de produto (roupa) */
+  object-fit: cover;      /* preenche sem parecer pequena */
+  border-radius: 12px;
+  background-color: #f0f1fb;
+}
+
+/* TEXTO */
+.produto h3 {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.produto p {
+  margin-top: 5px;
+  font-weight: 600;
+  color: #4b57a3;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .grid-produtos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-produtos {
+    grid-template-columns: 1fr;
+  }
+}
+/* RODAPÉ */
+.footer {
+  background-color: #ffffff;
+  margin-top: 80px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.footer p {
+  font-size: 14px;
+  color: #666;
+}
+
+.footer span {
+  color: #4b57a3;
+  font-weight: 500;
+}
